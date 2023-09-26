@@ -9,10 +9,10 @@ import Foundation
 
 struct Fish: Equatable, Identifiable, Codable {
     var id: UUID
-    var species: String
-    var length: Double
-    var weight: Double
-    var notes: String
+    var species: String = ""
+    var length: Double = 0.0
+    var weight: Double = 0.0
+    var notes: String = ""
 }
 
 extension Fish {

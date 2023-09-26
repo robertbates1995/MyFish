@@ -7,86 +7,132 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7AC779AA2ABCA77200104935 /* MyFishApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC779A92ABCA77200104935 /* MyFishApp.swift */; };
-		7AC779AC2ABCA77200104935 /* FishListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC779AB2ABCA77200104935 /* FishListView.swift */; };
-		7AC779AE2ABCA77400104935 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AC779AD2ABCA77400104935 /* Assets.xcassets */; };
-		7AC779B12ABCA77400104935 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AC779B02ABCA77400104935 /* Preview Assets.xcassets */; };
-		7AC779BA2ABCA91D00104935 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 7AC779B92ABCA91D00104935 /* ComposableArchitecture */; };
-		7AC779BC2ABCB14200104935 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC779BB2ABCB14200104935 /* Models.swift */; };
-		7AC779BE2ABF4FD300104935 /* FishCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC779BD2ABF4FD300104935 /* FishCardView.swift */; };
+		7AB7D4072AC33FF2002D86F2 /* MyFishApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB7D4062AC33FF2002D86F2 /* MyFishApp.swift */; };
+		7AB7D40B2AC33FF5002D86F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AB7D40A2AC33FF5002D86F2 /* Assets.xcassets */; };
+		7AB7D40E2AC33FF5002D86F2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AB7D40D2AC33FF5002D86F2 /* Preview Assets.xcassets */; };
+		7AB7D4192AC33FF5002D86F2 /* MyFishTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB7D4182AC33FF5002D86F2 /* MyFishTests.swift */; };
+		7AB7D4322AC340D6002D86F2 /* FishCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB7D4312AC340D6002D86F2 /* FishCardView.swift */; };
+		7AB7D4352AC34104002D86F2 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB7D4332AC34104002D86F2 /* Models.swift */; };
+		7AB7D4362AC34104002D86F2 /* FishListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB7D4342AC34104002D86F2 /* FishListView.swift */; };
+		7AB7D4392AC34132002D86F2 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 7AB7D4382AC34132002D86F2 /* ComposableArchitecture */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		7AB7D4152AC33FF5002D86F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7AB7D3FB2AC33FF2002D86F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7AB7D4022AC33FF2002D86F2;
+			remoteInfo = MyFish;
+		};
+		7AB7D41F2AC33FF5002D86F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7AB7D3FB2AC33FF2002D86F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7AB7D4022AC33FF2002D86F2;
+			remoteInfo = MyFish;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		7AC779A62ABCA77200104935 /* MyFish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFish.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7AC779A92ABCA77200104935 /* MyFishApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFishApp.swift; sourceTree = "<group>"; };
-		7AC779AB2ABCA77200104935 /* FishListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishListView.swift; sourceTree = "<group>"; };
-		7AC779AD2ABCA77400104935 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7AC779B02ABCA77400104935 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		7AC779B22ABCA77400104935 /* MyFish.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyFish.entitlements; sourceTree = "<group>"; };
-		7AC779BB2ABCB14200104935 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
-		7AC779BD2ABF4FD300104935 /* FishCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishCardView.swift; sourceTree = "<group>"; };
+		7AB7D4032AC33FF2002D86F2 /* MyFish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFish.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AB7D4062AC33FF2002D86F2 /* MyFishApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFishApp.swift; sourceTree = "<group>"; };
+		7AB7D40A2AC33FF5002D86F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7AB7D40D2AC33FF5002D86F2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7AB7D40F2AC33FF5002D86F2 /* MyFish.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyFish.entitlements; sourceTree = "<group>"; };
+		7AB7D4142AC33FF5002D86F2 /* MyFishTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFishTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AB7D4182AC33FF5002D86F2 /* MyFishTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFishTests.swift; sourceTree = "<group>"; };
+		7AB7D41E2AC33FF5002D86F2 /* MyFishUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFishUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AB7D4312AC340D6002D86F2 /* FishCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FishCardView.swift; sourceTree = "<group>"; };
+		7AB7D4332AC34104002D86F2 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		7AB7D4342AC34104002D86F2 /* FishListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FishListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7AC779A32ABCA77200104935 /* Frameworks */ = {
+		7AB7D4002AC33FF2002D86F2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AC779BA2ABCA91D00104935 /* ComposableArchitecture in Frameworks */,
+				7AB7D4392AC34132002D86F2 /* ComposableArchitecture in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AB7D4112AC33FF5002D86F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AB7D41B2AC33FF5002D86F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7AC7799D2ABCA77200104935 = {
+		7AB7D3FA2AC33FF2002D86F2 = {
 			isa = PBXGroup;
 			children = (
-				7AC779A82ABCA77200104935 /* MyFish */,
-				7AC779A72ABCA77200104935 /* Products */,
+				7AB7D4052AC33FF2002D86F2 /* MyFish */,
+				7AB7D4172AC33FF5002D86F2 /* MyFishTests */,
+				7AB7D4042AC33FF2002D86F2 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		7AC779A72ABCA77200104935 /* Products */ = {
+		7AB7D4042AC33FF2002D86F2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7AC779A62ABCA77200104935 /* MyFish.app */,
+				7AB7D4032AC33FF2002D86F2 /* MyFish.app */,
+				7AB7D4142AC33FF5002D86F2 /* MyFishTests.xctest */,
+				7AB7D41E2AC33FF5002D86F2 /* MyFishUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7AC779A82ABCA77200104935 /* MyFish */ = {
+		7AB7D4052AC33FF2002D86F2 /* MyFish */ = {
 			isa = PBXGroup;
 			children = (
-				7AC779A92ABCA77200104935 /* MyFishApp.swift */,
-				7AC779AB2ABCA77200104935 /* FishListView.swift */,
-				7AC779AD2ABCA77400104935 /* Assets.xcassets */,
-				7AC779B22ABCA77400104935 /* MyFish.entitlements */,
-				7AC779AF2ABCA77400104935 /* Preview Content */,
-				7AC779BB2ABCB14200104935 /* Models.swift */,
-				7AC779BD2ABF4FD300104935 /* FishCardView.swift */,
+				7AB7D4062AC33FF2002D86F2 /* MyFishApp.swift */,
+				7AB7D4342AC34104002D86F2 /* FishListView.swift */,
+				7AB7D4312AC340D6002D86F2 /* FishCardView.swift */,
+				7AB7D4332AC34104002D86F2 /* Models.swift */,
+				7AB7D40A2AC33FF5002D86F2 /* Assets.xcassets */,
+				7AB7D40F2AC33FF5002D86F2 /* MyFish.entitlements */,
+				7AB7D40C2AC33FF5002D86F2 /* Preview Content */,
 			);
 			path = MyFish;
 			sourceTree = "<group>";
 		};
-		7AC779AF2ABCA77400104935 /* Preview Content */ = {
+		7AB7D40C2AC33FF5002D86F2 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				7AC779B02ABCA77400104935 /* Preview Assets.xcassets */,
+				7AB7D40D2AC33FF5002D86F2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7AB7D4172AC33FF5002D86F2 /* MyFishTests */ = {
+			isa = PBXGroup;
+			children = (
+				7AB7D4182AC33FF5002D86F2 /* MyFishTests.swift */,
+			);
+			path = MyFishTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7AC779A52ABCA77200104935 /* MyFish */ = {
+		7AB7D4022AC33FF2002D86F2 /* MyFish */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7AC779B52ABCA77400104935 /* Build configuration list for PBXNativeTarget "MyFish" */;
+			buildConfigurationList = 7AB7D4282AC33FF5002D86F2 /* Build configuration list for PBXNativeTarget "MyFish" */;
 			buildPhases = (
-				7AC779A22ABCA77200104935 /* Sources */,
-				7AC779A32ABCA77200104935 /* Frameworks */,
-				7AC779A42ABCA77200104935 /* Resources */,
+				7AB7D3FF2AC33FF2002D86F2 /* Sources */,
+				7AB7D4002AC33FF2002D86F2 /* Frameworks */,
+				7AB7D4012AC33FF2002D86F2 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -94,28 +140,72 @@
 			);
 			name = MyFish;
 			packageProductDependencies = (
-				7AC779B92ABCA91D00104935 /* ComposableArchitecture */,
+				7AB7D4382AC34132002D86F2 /* ComposableArchitecture */,
 			);
 			productName = MyFish;
-			productReference = 7AC779A62ABCA77200104935 /* MyFish.app */;
+			productReference = 7AB7D4032AC33FF2002D86F2 /* MyFish.app */;
 			productType = "com.apple.product-type.application";
+		};
+		7AB7D4132AC33FF5002D86F2 /* MyFishTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7AB7D42B2AC33FF5002D86F2 /* Build configuration list for PBXNativeTarget "MyFishTests" */;
+			buildPhases = (
+				7AB7D4102AC33FF5002D86F2 /* Sources */,
+				7AB7D4112AC33FF5002D86F2 /* Frameworks */,
+				7AB7D4122AC33FF5002D86F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7AB7D4162AC33FF5002D86F2 /* PBXTargetDependency */,
+			);
+			name = MyFishTests;
+			productName = MyFishTests;
+			productReference = 7AB7D4142AC33FF5002D86F2 /* MyFishTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7AB7D41D2AC33FF5002D86F2 /* MyFishUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7AB7D42E2AC33FF5002D86F2 /* Build configuration list for PBXNativeTarget "MyFishUITests" */;
+			buildPhases = (
+				7AB7D41A2AC33FF5002D86F2 /* Sources */,
+				7AB7D41B2AC33FF5002D86F2 /* Frameworks */,
+				7AB7D41C2AC33FF5002D86F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7AB7D4202AC33FF5002D86F2 /* PBXTargetDependency */,
+			);
+			name = MyFishUITests;
+			productName = MyFishUITests;
+			productReference = 7AB7D41E2AC33FF5002D86F2 /* MyFishUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		7AC7799E2ABCA77200104935 /* Project object */ = {
+		7AB7D3FB2AC33FF2002D86F2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
-					7AC779A52ABCA77200104935 = {
+					7AB7D4022AC33FF2002D86F2 = {
 						CreatedOnToolsVersion = 15.0;
+					};
+					7AB7D4132AC33FF5002D86F2 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 7AB7D4022AC33FF2002D86F2;
+					};
+					7AB7D41D2AC33FF5002D86F2 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 7AB7D4022AC33FF2002D86F2;
 					};
 				};
 			};
-			buildConfigurationList = 7AC779A12ABCA77200104935 /* Build configuration list for PBXProject "MyFish" */;
+			buildConfigurationList = 7AB7D3FE2AC33FF2002D86F2 /* Build configuration list for PBXProject "MyFish" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -123,47 +213,91 @@
 				en,
 				Base,
 			);
-			mainGroup = 7AC7799D2ABCA77200104935;
+			mainGroup = 7AB7D3FA2AC33FF2002D86F2;
 			packageReferences = (
-				7AC779B82ABCA91D00104935 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				7AB7D4372AC34132002D86F2 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
 			);
-			productRefGroup = 7AC779A72ABCA77200104935 /* Products */;
+			productRefGroup = 7AB7D4042AC33FF2002D86F2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7AC779A52ABCA77200104935 /* MyFish */,
+				7AB7D4022AC33FF2002D86F2 /* MyFish */,
+				7AB7D4132AC33FF5002D86F2 /* MyFishTests */,
+				7AB7D41D2AC33FF5002D86F2 /* MyFishUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		7AC779A42ABCA77200104935 /* Resources */ = {
+		7AB7D4012AC33FF2002D86F2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AC779B12ABCA77400104935 /* Preview Assets.xcassets in Resources */,
-				7AC779AE2ABCA77400104935 /* Assets.xcassets in Resources */,
+				7AB7D40E2AC33FF5002D86F2 /* Preview Assets.xcassets in Resources */,
+				7AB7D40B2AC33FF5002D86F2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AB7D4122AC33FF5002D86F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AB7D41C2AC33FF5002D86F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7AC779A22ABCA77200104935 /* Sources */ = {
+		7AB7D3FF2AC33FF2002D86F2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AC779BE2ABF4FD300104935 /* FishCardView.swift in Sources */,
-				7AC779BC2ABCB14200104935 /* Models.swift in Sources */,
-				7AC779AC2ABCA77200104935 /* FishListView.swift in Sources */,
-				7AC779AA2ABCA77200104935 /* MyFishApp.swift in Sources */,
+				7AB7D4352AC34104002D86F2 /* Models.swift in Sources */,
+				7AB7D4322AC340D6002D86F2 /* FishCardView.swift in Sources */,
+				7AB7D4362AC34104002D86F2 /* FishListView.swift in Sources */,
+				7AB7D4072AC33FF2002D86F2 /* MyFishApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AB7D4102AC33FF5002D86F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AB7D4192AC33FF5002D86F2 /* MyFishTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AB7D41A2AC33FF5002D86F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		7AB7D4162AC33FF5002D86F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7AB7D4022AC33FF2002D86F2 /* MyFish */;
+			targetProxy = 7AB7D4152AC33FF5002D86F2 /* PBXContainerItemProxy */;
+		};
+		7AB7D4202AC33FF5002D86F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7AB7D4022AC33FF2002D86F2 /* MyFish */;
+			targetProxy = 7AB7D41F2AC33FF5002D86F2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		7AC779B32ABCA77400104935 /* Debug */ = {
+		7AB7D4262AC33FF5002D86F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -220,13 +354,13 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
+				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		7AC779B42ABCA77400104935 /* Release */ = {
+		7AB7D4272AC33FF5002D86F2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -276,12 +410,12 @@
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				SDKROOT = iphoneos;
+				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
 			};
 			name = Release;
 		};
-		7AC779B62ABCA77400104935 /* Debug */ = {
+		7AB7D4292AC33FF5002D86F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -308,7 +442,7 @@
 			};
 			name = Debug;
 		};
-		7AC779B72ABCA77400104935 /* Release */ = {
+		7AB7D42A2AC33FF5002D86F2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -335,23 +469,113 @@
 			};
 			name = Release;
 		};
+		7AB7D42C2AC33FF5002D86F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2DDP9BK6TP;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Robert-Bates.MyFishTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyFish.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MyFish";
+			};
+			name = Debug;
+		};
+		7AB7D42D2AC33FF5002D86F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2DDP9BK6TP;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Robert-Bates.MyFishTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyFish.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MyFish";
+			};
+			name = Release;
+		};
+		7AB7D42F2AC33FF5002D86F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2DDP9BK6TP;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Robert-Bates.MyFishUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = MyFish;
+			};
+			name = Debug;
+		};
+		7AB7D4302AC33FF5002D86F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2DDP9BK6TP;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Robert-Bates.MyFishUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = MyFish;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7AC779A12ABCA77200104935 /* Build configuration list for PBXProject "MyFish" */ = {
+		7AB7D3FE2AC33FF2002D86F2 /* Build configuration list for PBXProject "MyFish" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7AC779B32ABCA77400104935 /* Debug */,
-				7AC779B42ABCA77400104935 /* Release */,
+				7AB7D4262AC33FF5002D86F2 /* Debug */,
+				7AB7D4272AC33FF5002D86F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7AC779B52ABCA77400104935 /* Build configuration list for PBXNativeTarget "MyFish" */ = {
+		7AB7D4282AC33FF5002D86F2 /* Build configuration list for PBXNativeTarget "MyFish" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7AC779B62ABCA77400104935 /* Debug */,
-				7AC779B72ABCA77400104935 /* Release */,
+				7AB7D4292AC33FF5002D86F2 /* Debug */,
+				7AB7D42A2AC33FF5002D86F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7AB7D42B2AC33FF5002D86F2 /* Build configuration list for PBXNativeTarget "MyFishTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AB7D42C2AC33FF5002D86F2 /* Debug */,
+				7AB7D42D2AC33FF5002D86F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7AB7D42E2AC33FF5002D86F2 /* Build configuration list for PBXNativeTarget "MyFishUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AB7D42F2AC33FF5002D86F2 /* Debug */,
+				7AB7D4302AC33FF5002D86F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -359,7 +583,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		7AC779B82ABCA91D00104935 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+		7AB7D4372AC34132002D86F2 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "http://github.com/pointfreeco/swift-composable-architecture#Installation";
 			requirement = {
@@ -370,12 +594,12 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		7AC779B92ABCA91D00104935 /* ComposableArchitecture */ = {
+		7AB7D4382AC34132002D86F2 /* ComposableArchitecture */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7AC779B82ABCA91D00104935 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			package = 7AB7D4372AC34132002D86F2 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
 			productName = ComposableArchitecture;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 7AC7799E2ABCA77200104935 /* Project object */;
+	rootObject = 7AB7D3FB2AC33FF2002D86F2 /* Project object */;
 }
