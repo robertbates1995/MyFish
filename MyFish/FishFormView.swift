@@ -12,11 +12,11 @@ struct FishFormFeature: Reducer {
     struct State: Equatable {
         @BindingState var focus: Field?
         @BindingState var fish: Fish
+        @PresentationState var changeLength: LengthPickerFeature.State?
         
         enum Field: Hashable {
             case species
-            case weight
-            case length
+            case metrics
         }
         
         init(focus: Field? = .species, fish: Fish) {
@@ -27,12 +27,28 @@ struct FishFormFeature: Reducer {
     
     enum Action: BindableAction {
         case binding(BindingAction<State>)
+        case changeLength(PresentationAction<LengthPickerFeature.Action>)
+        case changeLengthButtonTapped
+        case saveLengthButtonTapped
+        case cancelChangeLengthButtonTapped
     }
     
     var body: some ReducerOf<Self> {
         BindingReducer()
         Reduce { state, action in
-            return .none
+            switch action {
+            case .changeLengthButtonTapped:
+                state.changeLength = LengthPickerFeature.State()
+                return .none
+            case .changeLength(_):
+                return .none
+            case .binding(_):
+                return .none
+            case .saveLengthButtonTapped:
+                return .none
+            case .cancelChangeLengthButtonTapped:
+                return .none
+            }
         }
     }
 }
@@ -49,6 +65,7 @@ struct FishFormView: View {
                     TextField("Species", text: viewStore.$fish.species)
                         .font(.callout)
                 }
+//                LengthPickerView(store: viewStore)
             }
         }
     }
