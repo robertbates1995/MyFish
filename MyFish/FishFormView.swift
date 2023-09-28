@@ -9,17 +9,29 @@ import SwiftUI
 import ComposableArchitecture
 
 struct FishFormFeature: Reducer {
-    struct State {
-        var fish: Fish
+    struct State: Equatable {
+        @BindingState var focus: Field?
+        @BindingState var fish: Fish
+        
+        enum Field: Hashable {
+            case species
+            case weight
+            case length
+        }
+        
+        init(focus: Field? = .species, fish: Fish) {
+            self.focus = focus
+            self.fish = fish
+        }
     }
     
-    enum Action {
-        //    case decrementButtonTapped
-        //    case incrementButtonTapped
+    enum Action: BindableAction {
+        case binding(BindingAction<State>)
     }
     
     var body: some ReducerOf<Self> {
-        Reduce{ state,action in
+        BindingReducer()
+        Reduce { state, action in
             return .none
         }
     }
@@ -29,12 +41,13 @@ struct FishFormView: View {
     let store: StoreOf<FishFormFeature>
     
     var body: some View {
-        WithViewStore(self.store, observe: \.fish) { viewStore in
-            VStack {
+        WithViewStore(self.store, observe: { $0 }) { viewStore in
+            Form{
                 HStack{
-                    Text("Species:")
-                        .font(.headline)
-                    Text(viewStore.species)
+                    Text("Species: ")
+                        .font(.callout)
+                    TextField("Species", text: viewStore.$fish.species)
+                        .font(.callout)
                 }
             }
         }
@@ -42,7 +55,5 @@ struct FishFormView: View {
 }
 
 #Preview {
-    FishFormView(store: Store(initialState: FishFormFeature.State(fish: .mock)) {
-        
-    })
+    FishFormView(store: Store(initialState: FishFormFeature.State(fish: Fish(id: UUID()))){FishFormFeature()})
 }

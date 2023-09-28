@@ -15,12 +15,17 @@ struct Fish: Equatable, Identifiable, Codable {
     var notes: String = ""
 }
 
+struct Length {
+    var feet: Int
+    
+}
+
 extension Fish {
     static let mock = Self(
         id: Fish.ID(),
         species: "Species",
         length: 1.0,
         weight: 1.0,
-        notes: "This is an example of a note about a fish."
+        notes: "This is a mock example of a note about a fish."
     )
 }
