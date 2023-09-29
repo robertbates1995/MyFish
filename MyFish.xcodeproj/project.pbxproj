@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		7A1D24B62AC5D29D0061C7D0 /* LengthPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1D24B52AC5D29D0061C7D0 /* LengthPickerView.swift */; };
+		7A1D24B82AC619880061C7D0 /* FishCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1D24B72AC619880061C7D0 /* FishCardView.swift */; };
 		7A9B23CA2AC343720052D90B /* FishFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9B23C92AC343720052D90B /* FishFormView.swift */; };
 		7AB7D4072AC33FF2002D86F2 /* MyFishApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB7D4062AC33FF2002D86F2 /* MyFishApp.swift */; };
 		7AB7D40B2AC33FF5002D86F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AB7D40A2AC33FF5002D86F2 /* Assets.xcassets */; };
 		7AB7D40E2AC33FF5002D86F2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AB7D40D2AC33FF5002D86F2 /* Preview Assets.xcassets */; };
 		7AB7D4192AC33FF5002D86F2 /* MyFishTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB7D4182AC33FF5002D86F2 /* MyFishTests.swift */; };
-		7AB7D4322AC340D6002D86F2 /* FishCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB7D4312AC340D6002D86F2 /* FishCardView.swift */; };
 		7AB7D4352AC34104002D86F2 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB7D4332AC34104002D86F2 /* Models.swift */; };
 		7AB7D4362AC34104002D86F2 /* FishListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB7D4342AC34104002D86F2 /* FishListView.swift */; };
 		7AB7D4392AC34132002D86F2 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 7AB7D4382AC34132002D86F2 /* ComposableArchitecture */; };
@@ -31,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		7A1D24B52AC5D29D0061C7D0 /* LengthPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LengthPickerView.swift; sourceTree = "<group>"; };
+		7A1D24B72AC619880061C7D0 /* FishCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FishCardView.swift; sourceTree = "<group>"; };
 		7A9B23C92AC343720052D90B /* FishFormView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FishFormView.swift; sourceTree = "<group>"; };
 		7AB7D4032AC33FF2002D86F2 /* MyFish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFish.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AB7D4062AC33FF2002D86F2 /* MyFishApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFishApp.swift; sourceTree = "<group>"; };
@@ -39,7 +40,6 @@
 		7AB7D40F2AC33FF5002D86F2 /* MyFish.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyFish.entitlements; sourceTree = "<group>"; };
 		7AB7D4142AC33FF5002D86F2 /* MyFishTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFishTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AB7D4182AC33FF5002D86F2 /* MyFishTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFishTests.swift; sourceTree = "<group>"; };
-		7AB7D4312AC340D6002D86F2 /* FishCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FishCardView.swift; sourceTree = "<group>"; };
 		7AB7D4332AC34104002D86F2 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		7AB7D4342AC34104002D86F2 /* FishListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FishListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,9 +86,9 @@
 			children = (
 				7AB7D4062AC33FF2002D86F2 /* MyFishApp.swift */,
 				7AB7D4342AC34104002D86F2 /* FishListView.swift */,
+				7A1D24B72AC619880061C7D0 /* FishCardView.swift */,
 				7A9B23C92AC343720052D90B /* FishFormView.swift */,
 				7A1D24B52AC5D29D0061C7D0 /* LengthPickerView.swift */,
-				7AB7D4312AC340D6002D86F2 /* FishCardView.swift */,
 				7AB7D4332AC34104002D86F2 /* Models.swift */,
 				7AB7D40A2AC33FF5002D86F2 /* Assets.xcassets */,
 				7AB7D40F2AC33FF5002D86F2 /* MyFish.entitlements */,
@@ -219,8 +219,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A1D24B82AC619880061C7D0 /* FishCardView.swift in Sources */,
 				7AB7D4352AC34104002D86F2 /* Models.swift in Sources */,
-				7AB7D4322AC340D6002D86F2 /* FishCardView.swift in Sources */,
 				7A1D24B62AC5D29D0061C7D0 /* LengthPickerView.swift in Sources */,
 				7AB7D4362AC34104002D86F2 /* FishListView.swift in Sources */,
 				7A9B23CA2AC343720052D90B /* FishFormView.swift in Sources */,

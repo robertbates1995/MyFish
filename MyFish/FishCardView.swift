@@ -20,7 +20,9 @@ struct FishCardFeature: Reducer {
     }
     
     var body: some ReducerOf<Self> {
-        Reduce{state,action in return .none}
+        Reduce { state, action in
+            return .none
+        }
     }
 }
 
@@ -29,17 +31,16 @@ struct FishCardView: View {
     let fish: Fish
     
     var body: some View {
-            HStack{
-                Text(self.fish.species)
-                    .font(.headline)
-                Spacer()
-                VStack{
-                    Text("Length: \(String(format: "%.2f", self.fish.length))")
-                        .font(.subheadline)
-                    Text("Weight: \(String(format: "%.2f", self.fish.weight))")
-                        .font(.subheadline)
-                }
-                Spacer()
-            }
+        HStack(){
+            Text(self.fish.species)
+            Spacer()
+            Text("\(self.fish.feet)' \(self.fish.inches)\"")
+            Spacer()
+            Text("\(String(format: "%.2f", self.fish.weight)) lbs")
+        }
     }
+}
+
+#Preview {
+    FishCardView(fish: Fish(id: UUID(), species: "test"))
 }

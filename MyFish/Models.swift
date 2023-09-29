@@ -24,7 +24,7 @@ struct Length {
 extension Fish {
     static let mock = Self(
         id: Fish.ID(),
-        species: "Species",
+        species: "Test Species",
         feet: 0,
         inches: 0,
         weight: 1.0,

@@ -103,7 +103,8 @@ struct FishListView: View {
                     initialState: FishListFeature.State(fishList: [.mock])
                 ) {
                     FishListFeature()
-                })
+                }
+            )
         }
     }
 }

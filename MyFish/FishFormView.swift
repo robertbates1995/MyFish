@@ -40,7 +40,7 @@ struct FishFormFeature: Reducer {
             case .changeLengthButtonTapped:
                 state.changeLength = LengthPickerFeature.State()
                 return .none
-            case .changeLength(_):
+            case .changeLength:
                 return .none
             case .binding(_):
                 return .none
@@ -57,20 +57,34 @@ struct FishFormView: View {
     let store: StoreOf<FishFormFeature>
     
     var body: some View {
-        WithViewStore(self.store, observe: { $0 }) { viewStore in
-            Form{
-                HStack{
+        WithViewStore(self.store, observe: {$0}) { viewStore in
+            List {
+                HStack {
                     Text("Species: ")
-                        .font(.callout)
-                    TextField("Species", text: viewStore.$fish.species)
-                        .font(.callout)
+                    TextField("species", text: viewStore.$fish.species)
+                }.font(.callout)
+                HStack {
+                    Text("Length: ")
+                    Button(action: {viewStore.send(.changeLengthButtonTapped)}, label: {
+                        Text("\(viewStore.fish.feet)' \(viewStore.fish.inches)\"")
+                    })
                 }
-//                LengthPickerView(store: viewStore)
+            }
+            .sheet(
+                store: self.store.scope(
+                    state: \.$changeLength,
+                    action: { .changeLength($0) }
+                )
+            ) { _ in
+                NavigationStack {
+                    FishFormView(store: store)
+                        .navigationTitle("Length")
+                }
             }
         }
     }
 }
 
 #Preview {
-    FishFormView(store: Store(initialState: FishFormFeature.State(fish: Fish(id: UUID()))){FishFormFeature()})
+    FishFormView(store: Store(initialState: FishFormFeature.State(fish: .mock)){FishFormFeature()})
 }

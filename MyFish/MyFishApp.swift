@@ -12,7 +12,15 @@ import ComposableArchitecture
 struct MyFishApp: App {
     var body: some Scene {
         WindowGroup {
-//            FishListView()
+            NavigationStack {
+                FishListView(
+                    store: Store(
+                        initialState: FishListFeature.State(fishList: [.mock])
+                    ) {
+                        FishListFeature()
+                    }
+                )
+            }
         }
     }
 }
