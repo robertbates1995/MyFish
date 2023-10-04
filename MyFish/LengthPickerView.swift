@@ -36,7 +36,7 @@ struct LengthPickerView: View {
                     Text("\(viewStore.feet)'")
                     Text("\(viewStore.inches)''")
                 }.font(.largeTitle)
-                HStack{
+                HStack {
                     Picker(selection: viewStore.$feet, label: Text("Feet")) {
                         ForEach(0...99, id: \.self){ i in
                             Text(String(i)).tag(i)
