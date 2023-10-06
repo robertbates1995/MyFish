@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7A1D24B62AC5D29D0061C7D0 /* LengthPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1D24B52AC5D29D0061C7D0 /* LengthPickerView.swift */; };
 		7A1D24B82AC619880061C7D0 /* FishCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1D24B72AC619880061C7D0 /* FishCardView.swift */; };
+		7A1D24BA2ACF92220061C7D0 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1D24B92ACF92220061C7D0 /* AppView.swift */; };
 		7A9B23CA2AC343720052D90B /* FishFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9B23C92AC343720052D90B /* FishFormView.swift */; };
 		7AB7D4072AC33FF2002D86F2 /* MyFishApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB7D4062AC33FF2002D86F2 /* MyFishApp.swift */; };
 		7AB7D40B2AC33FF5002D86F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AB7D40A2AC33FF5002D86F2 /* Assets.xcassets */; };
@@ -32,6 +33,7 @@
 /* Begin PBXFileReference section */
 		7A1D24B52AC5D29D0061C7D0 /* LengthPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LengthPickerView.swift; sourceTree = "<group>"; };
 		7A1D24B72AC619880061C7D0 /* FishCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FishCardView.swift; sourceTree = "<group>"; };
+		7A1D24B92ACF92220061C7D0 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		7A9B23C92AC343720052D90B /* FishFormView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FishFormView.swift; sourceTree = "<group>"; };
 		7AB7D4032AC33FF2002D86F2 /* MyFish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFish.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AB7D4062AC33FF2002D86F2 /* MyFishApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFishApp.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				7AB7D40A2AC33FF5002D86F2 /* Assets.xcassets */,
 				7AB7D40F2AC33FF5002D86F2 /* MyFish.entitlements */,
 				7AB7D40C2AC33FF5002D86F2 /* Preview Content */,
+				7A1D24B92ACF92220061C7D0 /* AppView.swift */,
 			);
 			path = MyFish;
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 				7A1D24B82AC619880061C7D0 /* FishCardView.swift in Sources */,
 				7AB7D4352AC34104002D86F2 /* Models.swift in Sources */,
 				7A1D24B62AC5D29D0061C7D0 /* LengthPickerView.swift in Sources */,
+				7A1D24BA2ACF92220061C7D0 /* AppView.swift in Sources */,
 				7AB7D4362AC34104002D86F2 /* FishListView.swift in Sources */,
 				7A9B23CA2AC343720052D90B /* FishFormView.swift in Sources */,
 				7AB7D4072AC33FF2002D86F2 /* MyFishApp.swift in Sources */,

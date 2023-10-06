@@ -24,3 +24,7 @@ struct MyFishApp: App {
         }
     }
 }
+
+#Preview {
+    MyFishApp()
+}
