@@ -32,11 +32,18 @@ struct AppFeature: Reducer {
 }
 
 struct AppView: View {
+    let store: StoreOf<AppFeature>
+    
     var body: some View {
-        Text("hello world")
+        NavigationStack {
+            FishListView(store: self.store.scope(
+                state: \.fishList,
+                action: { .fishList($0) }
+            ))
+        }
     }
 }
 
 #Preview {
-    AppView()
+    AppView(store: .init(initialState: .init(fishList: FishListFeature.mock)){AppFeature()})
 }

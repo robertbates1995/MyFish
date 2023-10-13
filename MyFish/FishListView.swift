@@ -9,9 +9,9 @@ import SwiftUI
 import ComposableArchitecture
 
 struct FishListFeature: Reducer {
-    struct State {
+    struct State: Equatable {
         @PresentationState var addFish: FishFormFeature.State?
-        var fishList: IdentifiedArrayOf<Fish> = []
+        var fishes: IdentifiedArrayOf<Fish> = []
     }
     
     enum Action {
@@ -20,6 +20,7 @@ struct FishListFeature: Reducer {
         case addButtonTapped
         case saveFishButtonTapped
         case cancelFishButtonTapped
+        case swipeDelete(IndexSet)
     }
     
     @Dependency(\.uuid) var uuid
@@ -36,11 +37,14 @@ struct FishListFeature: Reducer {
             case .saveFishButtonTapped:
                 guard let fish = state.addFish?.fish
                 else { return .none }
-                state.fishList.append(fish)
+                state.fishes.append(fish)
                 state.addFish = nil
                 return .none
             case .cancelFishButtonTapped:
                 state.addFish = nil
+                return .none
+            case .swipeDelete(let toDelete):
+                state.fishes.remove(atOffsets: toDelete)
                 return .none
             }
         }
@@ -54,10 +58,13 @@ struct FishListView: View {
     let store: StoreOf<FishListFeature>
     
     var body: some View {
-        WithViewStore(self.store, observe: \.fishList) { viewStore in
+        WithViewStore(self.store, observe: \.fishes) { viewStore in
             List{
                 ForEach(viewStore.state) { fish in
                     FishCardView(fish: fish)
+                }
+                .onDelete { indexSet in
+                    viewStore.send(.swipeDelete(indexSet))
                 }
             }
             .navigationTitle("Fish")
@@ -100,11 +107,15 @@ struct FishListView: View {
         NavigationStack {
             FishListView(
                 store: Store(
-                    initialState: FishListFeature.State(fishList: [.mock])
+                    initialState: FishListFeature.State(fishes: [.mock])
                 ) {
                     FishListFeature()
                 }
             )
         }
     }
+}
+
+extension FishListFeature {
+    static let mock: Self.State = State(fishes: .init(arrayLiteral: .mock))
 }
